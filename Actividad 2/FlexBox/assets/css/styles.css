@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contenedor-flex {
+    width: 600px;
+    max-width: 10000px;
+    max-height: 1000px;
+    height: 500px;
+    margin: 300px auto;
+    outline: 3px solid #000; /*Sirve para agregar un borde sin ser propiedad del modelo de caja*/
+    background-color: #fff;
+    padding: 20px;
+    display: flex; /*Permite que los elementos hijos se comporten como cajas flexibles*/
+    /* flex-direction: row; /*Valor por defecto, permite que los elementos se alineen de manera horizontal*/
+    /*flex-wrap: nowrap; /*Valor por defecto, no permite que los elementos se ajusten a la siguiente fila*/
+    flex-wrap: wrap; /*Permite que los elementos se ajusten a la siguiente fila*/
+    /*justify-content: center; /*Permite alinear los items de manera horizontal*/
+    /*justify-content: space-between; /*Distribuye el espacio entre los elementos*/
+    /*justify-content: space-around; /*Distribuye el espacio entre y a los lados de los elementos*/
+    justify-content: space-evenly; /*Distribuye el espacio entre y a los lados de los elementos de manera equitativa*/ 
+    align-items: center; /*Permite alinear los items de manera vertical*/
+    /*align-items: flex-start; /*Permite alinear los elementos al inicio de acuerdo al cross axis */
+    /*align-items: flex-end; /*Permite alinear los elementos al final de acuerdo al cross axis */
+
+
+}
+
+
+.elemento {
+    text-align: center;
+    width: 150px; 
+    height: 80px;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.pokemon-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; 
+}
+
+.nombre-pokemon {
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.elemento1 {
+    background-color: #78c850; 
+}
+
+.elemento2 {
+    background-color: #6890f0; 
+    flex-grow: 1; /*Permite que el elemento crezca en proporción a los demás elementos*/
+}
+
+.elemento3 {
+    background-color: #f08030; 
+    flex-shrink: 3; /*Permite que el elemento se encoja en proporción a los demás elementos*/
+}

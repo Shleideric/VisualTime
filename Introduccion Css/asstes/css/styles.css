@@ -1,0 +1,64 @@
+* {
+    color: slateblue;
+    /* box-sizing: content-box; Valor por defecto */
+    box-sizing: border-box;/* Border-box toma en consideración las propiedades de padding, border para el cálculo del tamaño del elemento */
+    margin: 0;
+}
+
+/* Esto es un selector de etiqueta, aplica para todos los elementos de una misma etiqueta */
+/* Selectores de etiqueta tienen una especificidad de 1 */
+h1 {
+    color: deeppink;
+}
+
+/* Podemos seleccionar hijos de un elemento padre indicando el nombre de la etiqueta padre y etiqueta hijo */
+div .elemento-hijo {
+    font-weight: bold;
+} 
+
+/* h1, h2 {
+    font-size: 2rem;
+} */
+
+/* Selector de clase, aplica para todos los elementos que compartan la clase, se utiliza a través de un "." */
+.subtitulo {
+    color: seagreen;
+}
+
+/* Selector de id, que aplica a los elementos que tengan el id, se utiliza a través de un "#" */
+#parrafo-principal {
+    color: salmon;
+}
+
+#parrafo-secundario {
+    color: blueviolet;
+}
+
+/* Propiedades del modelo de caja */
+.caja {
+    width: 200px;/* Ancho del elemento */
+    height: 200px;
+    background-color: #000;/* Color de fondo */
+    color: #fff; /* Color para el contenido */
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: crimson; */
+    border: solid 5px crimson;
+    /* padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px; */
+    padding: 50px 50px 50px 50px;
+    /* margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px; */
+    margin: 100px 100px;
+}
+
+.caja-imagen {
+    width: 50%;
+    height: 100%;
+    margin: 20px auto;/* Centrar horizontalmente */
+    display: block;/* Propiedad display permite cambiar la disposición de un elemento */
+}

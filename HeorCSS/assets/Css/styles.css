@@ -1,0 +1,60 @@
+:root {
+    --verder-gradiente: rgba(70, 150, 100, 0.5);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sansita Swashed';;
+    line-height: 1.5;
+    color: #333;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 100, 149, 0.405), var(--verder-gradiente)), url(https://previews.123rf.com/images/lipik/lipik1608/lipik160800355/61914248-perfil-del-estudiante-hermoso-feliz-en-vidrios-que-sonr%C3%ADe-mirando-la-ventana-usando-pc-de-la-tabla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-title {
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    font-size: 1.1 rem;
+    font-weight: 450;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    /* word-spacing: ; */
+
+}
+
+.footer {
+    background-color: var(--verder-gradiente);
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box; /* Modelo de caja */
+    margin: 0; /* Margen exterior */
+}
+
+.caja {
+    /* Unidades absolutas */
+    /* Unidades relativas */
+    width: 100%;/* Viewport */ /* 100% del ancho del viewport */
+    /* width: 100vw;Esta medida incluye el scroll */
+    height: 1200px; /* 100% del alto del viewport */
+    background-color: royalblue; /* Color de fondo */
+    border: solid 5px; /* Grosor, tipo de línea y color */
+    font-size: 10px; /* Tamaño de la fuente */
+}
+
+.caja-imagen {
+    margin: 20px auto; /* Margen superior e inferior de 20px y margen izquierdo y derecho automáticos */
+    width: 50%;/* La imagen toma un tamño relativo a su elemento padre */
+    height: 70%; /* La imagen toma un tamño relativo a su elemento padre */
+    display: block; /* Elemento en bloque */
+}
+
+.button {
+    width: 200px; /* Ancho del botón */
+    margin: 20px auto; /* Margen superior e inferior de 20px y margen izquierdo y derecho automáticos */
+    padding: 10px; /* Relleno interno */
+    background-color: lightslategrey; /* Color de fondo */
+    display: block; /* Elemento en bloque */
+    text-decoration: none; /* Decoración de texto */
+    color: azure; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    border-radius: 30px; /* Radio de las esquinas */
+    /* font-size: .5rem;  1 rem equivale a 16px */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    font-family: 'Arial'; /* Familia de la fuente */
+}
+
+.btn-primary {
+    /* position: static;Valor por defecto del posicionamiento */
+    position: relative;/* Permite cambiar posicionamiento tomando como referencia su posición original*/
+    top: 50px; /* Desplazamiento hacia abajo */
+    right: 50px; /* Desplazamiento hacia la derecha */
+    bottom: 2px; /* Desplazamiento hacia arriba */
+    left: 2px; /* Desplazamiento hacia la izquierda */
+    z-index: 100;
+}
+
+.btn-secondary {
+    /* position: fixed;Permite fijar un elemento en la posición que se indique */
+    position: sticky;/* Combina el posicionamiento relativo y fixed */
+    bottom: 50px; /* Distancia desde la parte inferior */
+    background-color: brown; /* Color de fondo */
+    z-index: 10; /* z index trabaja con el eje z, permite superponer elementos */
+}
+
+.btn-tertiary {
+    /* position: fixed;Permite fijar un elemento en la posición que se indique */
+    position: sticky;/* Combina el posicionamiento relativo y fixed */
+    bottom: 50px;
+}
