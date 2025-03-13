@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Codificacion de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se adapte a cualquier dispositivo -->
+    <meta name="description" content="Proyecto etiquetas senmanticas"> <!-- Descripcion de la pagina -->
+    <meta name="keywords" content="html, etiquetas, semánticas"> <!-- Palabras claves para el SEO -->
+    <meta name="author" content="Poochie"> <!-- Autor de la pagina -->
+    <title>Document</title> <!-- Titulo de la pagina -->
+    <style>
+        /* Aca podemos agregar estilos dentro del HTML */
+        table{ /* Estilos para la tabla */
+            width: 100%; /* 100% de ancho */
+            margin: 20px 0; /* 20px arriba y abajo y 0 a los lados */
+            font-family: Arial, Helvetica, sans-serif; /* Fuente de la tabla */
+        } 
+        table th{ /* Estilos para la tabla y los th */
+            background-color:  cadetblue; /* Color de fondo */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Cabecera de la pagina -->    
+    <header> 
+        <h1>Syntax Terror</h1> 
+        <nav><!--Navbar-->  
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#lista">Estudiantes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seccion Principal -->
+    <main> 
+        <!-- Las secciones las separamos por etiqueta Section -->
+        <section id="Inicio">
+            <h2>Bienvenid@ a mi página</h2>
+            <p>Esta es la sección de inicio</p>
+        <section>
+
+        <section id="lista">
+            <h2>Lista de Estudiantes</h2>
+            <table border="1"> 
+                <thead> <!-- Cabecera de la tabla -->
+                    <tr> <!-- Fila de la tabla -->
+                        <th>Nombre</th> <!-- Celda de la tabla -->
+                        <th>Edad</th>
+                        <th>Dato Curioso</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Cuerpo de la tabla -->
+                    <tr>
+                        <td>Carlos</td>
+                        <td>25</td>
+                        <td>Le gusta el futbol</td>
+                    </tr>
+                    <tr>
+                        <td>María</td>
+                        <td>22</td>
+                        <td>Le gusta el cine</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>30</td>
+                        <td>Le gusta la música</td>
+                    </tr>
+                </tbody>
+                <tfoot> <!-- Pie de la tabla -->
+                    <tr>
+                        <td colspan="3">Total de Estudiantes: 3</td> <!-- colspan para que ocupe las 3 columnas -->
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <!-- Los formularios llevan un atributo action que indica la URL hacia donde van a hacer la petición -->
+            <form action="http://127.0.0.1:5500/api/estudiantes/nuevo" method="post">
+                <label for="nombre">Indica tu nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" required>
+                <br>
+                <label for="edad">Indica tu edad</label>
+                <br>
+                <input type="number" name="edad" id="edad">
+                <br>
+                <label for="dato">Indica un dato curioso</label>
+                <br>
+                <input type="text" name="dato" id="dato">
+                <br>
+                <label for="password">Indica tu password</label>
+                <br>
+                <input type="password" name="password" id="password">
+                <br>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+</html>
