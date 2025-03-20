@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Proyecto hotel">
+        <meta name="keywords" content="hotel, reservas, spa">
+        <meta name="author" content="Cohorte 18">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Hotel</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido al Hotel Belen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#lista">Lista de Empleados</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="fotos">
+                <img src="https://plus.unsplash.com/premium_photo-1661964402307-02267d1423f5?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="habitacion deluxe">
+                <img src="https://www.thesolutionsdesk.com/wp-content/uploads/2022/08/GettyImages-1333257934_1200.jpg" alt="lobby hotel">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/10/9d/82/hotel-belen.jpg?w=900&h=500&s=1" alt="piscina">
+            </section>
+            <section id="lista">
+                <h2>Lista de Empleados</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Cargo</th>
+                            <th>Correo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Perez</td>
+                            <td>Administracion</td>
+                            <td>jperez@hotelbelen.com</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Perez</td>
+                            <td>Recursos Humanos</td>
+                            <td>mperez@hotelbelen.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Perez</td>
+                            <td>Gerente de Seguridad</td>
+                            <td>jperez02@hotelbelen.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="www.endpoint.com" method="post">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" placeholder="Ingrese su nombre" required id="nombre"><br>
+                    <label for="email">Correo</label><br>
+                    <input type="email" placeholder="Ingrese su correo" required id="email"><br>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea  id="mensaje" placeholder="Escribe tu mensaje"></textarea><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Hotel Belen 07 de marzo 2025 - Todos los Derechos Reservados</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: #4a2170;
+}
+a:hover{
+    color: green;
+}
+li {
+    list-style: none;
+    margin-right: 1rem;
+}
+ul{
+    display: flex;
+    justify-content: end;
+}
+nav{
+    padding: 1rem;
+    background-color: #303031;
+    color: azure;
+}
+footer{
+    padding: 2rem;
+    margin-bottom: 0;
+    
+    background-color: #303031;
+    color: aliceblue;
+    text-align: center;
+}

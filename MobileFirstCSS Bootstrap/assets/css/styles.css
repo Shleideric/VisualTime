@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    background-color: aliceblue;
+    color: midnightblue;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
+}
+
+
+.header, .main, .footer {
+    padding: 30px;
+    text-align: center;
+}
+
+/*
+.header {
+    background-image: linear-gradient(rgba(31, 164, 115, 0.5)
+    , aliceblue);
+}
+
+.main {
+    flex: 1;
+}
+
+.footer {
+    background-image: linear-gradient(aliceblue
+    , #1f81a4);
+}
+
+
+/* Tablets (768px) 
+@media (min-width: 768px) {
+    .header, .main, .footer {
+        padding: 40px;
+    }
+    
+    .header {
+        font-size: 2.5rem;
+    }
+
+    .main {
+        font-size: 2rem;
+    }
+    
+    .footer {
+        font-size: 1.5rem;
+    }
+} 
+
+/* Escritorio o desktop 
+@media (min-width: 1024px) {
+    .header, .main, .footer {
+        padding: 50px;
+    }
+    
+    .header {
+        font-size: 3rem;
+    }
+
+    .main {
+        font-size: 2.5rem;
+    }
+    
+    .footer {
+        font-size: 2rem;
+    }
+} */
